@@ -41,7 +41,7 @@ const filteredProperty = users.filter(function (user){
     return user.hasOwnProperty(userProperty)
 })
 const filteredEmail = filteredProperty.map(function (user){
-    return [`${user.name} - ${user.email}`]
+    return [`${user.name} - ${user[userProperty]}`]
 })
 
 for(const list of filteredEmail){
